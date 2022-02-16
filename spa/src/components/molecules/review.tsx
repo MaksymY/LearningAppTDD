@@ -1,12 +1,14 @@
 import * as React from 'react';
-
+import { ReviewContent } from '../atoms/reviewContent';
+import { ReviewDeck } from '../atoms/reviewDeck';
 export interface Props {}
 
 export const ReviewBlock :React.FunctionComponent<Props> = () => {
   return(
-    <div>
-      <h1>Ceci est un review-block</h1>
-      <p>Test</p>
+    <div id="reviewBlocks">
+      <ReviewDeck/>
+      &emsp;
+      <ReviewContent/>
     </div>
   )
 
